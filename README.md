@@ -2,7 +2,7 @@
 
 A full-stack web application that manages hostel room inventory and automatically allocates rooms to students based on capacity and facility requirements.
 
-## 🧠 Allocation Algorithm
+## Allocation Algorithm
 
 The core logic follows a **"smallest suitable room first"** strategy:
 
@@ -13,7 +13,7 @@ The core logic follows a **"smallest suitable room first"** strategy:
 
 This prevents waste of larger rooms and maintains efficient utilization.
 
-## 📊 Database Schema (MongoDB)
+## Database Schema (MongoDB)
 
 ### Room
 | Field | Type | Description |
@@ -35,13 +35,13 @@ This prevents waste of larger rooms and maintains efficient utilization.
 | needsWashroom | Boolean | Required washroom |
 | allocatedAt | Date | Allocation timestamp |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React (Vite) + Tailwind CSS v3 + React Router v6 + Axios
 - **Backend**: Node.js + Express.js + Mongoose
 - **Database**: MongoDB Atlas
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Backend
 
@@ -76,7 +76,7 @@ App runs on `http://localhost:5173`
 | POST | `/api/allocate` | Allocate best room |
 | GET | `/api/allocations` | List all allocations |
 
-## 🌐 Deployment
+## Deployment
 
 - **Frontend** → Vercel (set `VITE_API_URL` env var to backend URL)
 - **Backend** → Render (set `MONGO_URI` env var)
